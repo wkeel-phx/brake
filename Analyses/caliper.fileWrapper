@@ -1,0 +1,34 @@
+#
+# FileWrapper for caliper.exe training analysis program
+#
+# @author: Phoenix Integration
+# @version: Training
+# @description: brake caliper analysis
+# @keywords: caliper, braking, brake, training
+#
+
+RunCommands
+{
+   generate inFile
+   run "caliper"
+   parse outFile
+}
+
+RowFieldInputFile inFile
+{
+   templateFile: caliper.in.template
+   fileToGenerate: caliper.in
+
+   variable: pistonDiam    double 5 2 description="diameter of piston"  units="inches"
+   variable: pressure      double 6 2 description="hydraulic pressure in brake line"  units="psi"
+   variable: frictionForce double 7 2 description="friction force on piston in caliper"  units="lb"
+   variable: springForce   double 8 2 description="retraction spring force"  units="lb"
+}
+
+RowFieldOutputFile outFile
+{
+   fileToParse: caliper.out
+
+   setDelimiters "="
+   variable: normalForce double 16 2 description="force output from caliper"  units="lb"
+}

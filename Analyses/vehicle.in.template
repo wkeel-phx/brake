@@ -1,0 +1,12 @@
+#
+# Vehicle Analysis input file
+#
+
+grossWeight: 3200
+speed: 60
+rollingDiam: 22
+tireMu: 0.9
+numBrakingWheels: 4
+brakeTorque: 267
+
+

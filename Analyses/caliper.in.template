@@ -1,0 +1,10 @@
+#
+# Caliper Analysis input file
+#
+
+pistonDiam: 1.5
+pressure: 1000
+frictionForce: 30
+springForce: 50
+
+

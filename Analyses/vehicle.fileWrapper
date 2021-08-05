@@ -1,0 +1,37 @@
+#
+# FileWrapper for vehicle.exe training analysis program
+#
+# @author: Phoenix Integration
+# @version: Training
+# @description: vehicle braking analysis
+# @keywords: vehicle, braking, brake, training
+#
+
+RunCommands
+{
+   generate inFile
+   run "vehicle"
+   parse outFile
+}
+
+RowFieldInputFile inFile
+{
+   templateFile: vehicle.in.template
+   fileToGenerate: vehicle.in
+
+   variable: grossWeight      double 5 2  description="gross vehicle weight"  units="lb"
+   variable: speed            double 6 2  description="initial speed of vehicle"  units="mph"
+   variable: rollingDiam      double 7 2  description="rolling diameter of tires"  units="inches"
+   variable: tireMu           double 8 2  description="friction coefficient of tires on dry pavement"
+   variable: numBrakingWheels double 9 2  description="number of braking wheels on vehicle"
+   variable: brakeTorque      double 10 2 description="torque applied by brake"  units="ft-lb"
+}
+
+RowFieldOutputFile outFile
+{
+   fileToParse: vehicle.out
+
+   setDelimiters "="
+   variable: stopTime     double 20 2 description="time required for vehicle to stop from initial speed" units="seconds"
+   variable: stopDistance double 21 2 description="distance required for vehicle to stop from initial speed"  units="feet"
+}

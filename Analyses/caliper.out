@@ -1,0 +1,16 @@
+# Caliper Analysis Results
+# Fri Jul 30 09:04:41 2021
+#
+#INPUT: #
+#INPUT: # Caliper Analysis input file
+#INPUT: #
+#INPUT: 
+#INPUT: pistonDiam: 1.5
+#INPUT: pressure: 1000.0
+#INPUT: frictionForce: 30.0
+#INPUT: springForce: 50.0
+#INPUT: 
+#INPUT: 
+
+# calculated parameters
+normalForce=1687.145838
