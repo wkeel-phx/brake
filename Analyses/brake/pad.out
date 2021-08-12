@@ -1,14 +1,14 @@
 # Brake Pad Analysis Results
-# Thu Aug 12 07:13:10 2021
+# Thu Aug 12 08:46:44 2021
 #
 #INPUT: #
 #INPUT: # Brake Pad Analysis input file
 #INPUT: #
 #INPUT: 
 #INPUT: od: 11.0
-#INPUT: width: 2.0
+#INPUT: width: 5.0
 #INPUT: centerLength: 3.0
-#INPUT: thickness: 0.25
+#INPUT: thickness: 0.5
 #INPUT: brakeMu: 0.8
 #INPUT: normalForce: 1687.145838
 #INPUT: vehicleSpeed: 60.0
@@ -18,11 +18,11 @@
 
 # calculated parameters
 wheelRPM=916.732488
-effectiveRadius=4.500000
-effectiveSpeed=36.000000
+effectiveRadius=3.000000
+effectiveSpeed=24.000000
 frictionForce=1349.716670
-surfaceArea=6.000000
-wearRate=4.858980e-006
-heat=52.704007
-brakeTorque=506.143751
-life=30870.676476
+surfaceArea=15.000000
+wearRate=1.295728e-006
+heat=35.136004
+brakeTorque=337.429168
+life=308706.764764

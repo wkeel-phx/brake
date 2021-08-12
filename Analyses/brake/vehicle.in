@@ -7,6 +7,6 @@ speed: 60.0
 rollingDiam: 22.0
 tireMu: 0.9
 numBrakingWheels: 4.0
-brakeTorque: 506.143751
+brakeTorque: 337.429168
 
 

@@ -1,5 +1,5 @@
 # Vehicle Analysis Results
-# Thu Aug 12 07:13:12 2021
+# Thu Aug 12 08:46:44 2021
 #
 #INPUT: #
 #INPUT: # Vehicle Analysis input file
@@ -10,12 +10,12 @@
 #INPUT: rollingDiam: 22.0
 #INPUT: tireMu: 0.9
 #INPUT: numBrakingWheels: 4.0
-#INPUT: brakeTorque: 506.143751
+#INPUT: brakeTorque: 337.429168
 #INPUT: 
 #INPUT: 
 
 # calculated parameters
-singleStopForce=552.156819
-totalStopForce=2208.627277
-stopTime=3.959628
-stopDistance=174.223616
+singleStopForce=368.104547
+totalStopForce=1472.418188
+stopTime=5.939441
+stopDistance=261.335424
