@@ -1,0 +1,29 @@
+version: '3'
+services:
+    caliper:
+        #linkedComponent: caliper
+        #imageHash: 4dc83cedcfefadfa47c17708b364ec307d849a5e7b807609ff7bf012000c53cb
+        restart: on-failure
+        image: '10.10.9.84:5000/as:3.0'
+        hostname: 'caliper'
+        volumes:
+            - ./Analyses:C:\Users\ContainerAdministrator\AppData\Roaming\Phoenix Integration\AServer13.1\analyses
+        command: "C:/Program Files/Phoenix Integration/Analysis Server 13.1/aserver.exe"
+    pad:
+        #linkedComponent: pad
+        #imageHash: 4dc83cedcfefadfa47c17708b364ec307d849a5e7b807609ff7bf012000c53cb
+        restart: on-failure
+        image: '10.10.9.84:5000/as:3.0'
+        hostname: 'pad'
+        volumes:
+            - ./Analyses:C:\Users\ContainerAdministrator\AppData\Roaming\Phoenix Integration\AServer13.1\analyses
+        command: "C:/Program Files/Phoenix Integration/Analysis Server 13.1/aserver.exe"
+    vehicle:
+        #linkedComponent: vehicle
+        #imageHash: 4dc83cedcfefadfa47c17708b364ec307d849a5e7b807609ff7bf012000c53cb
+        restart: on-failure
+        image: '10.10.9.84:5000/as:3.0'
+        hostname: 'vehicle'
+        volumes:
+            - ./Analyses:C:\Users\ContainerAdministrator\AppData\Roaming\Phoenix Integration\AServer13.1\analyses
+        command: "C:/Program Files/Phoenix Integration/Analysis Server 13.1/aserver.exe"

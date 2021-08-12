@@ -1,0 +1,14 @@
+#
+# Brake Pad Analysis input file
+#
+
+od: 11.0
+width: 2.0
+centerLength: 3.0
+thickness: 0.25
+brakeMu: 0.8
+normalForce: 1687.145838
+vehicleSpeed: 60.0
+tireDiam: 22.0
+
+

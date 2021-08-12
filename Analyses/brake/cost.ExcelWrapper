@@ -1,0 +1,17 @@
+# This file wraps the cost.xls' Excel workbook.
+
+# @author: Phoenix Integration
+# @version: Training
+# @description: brake system cost analysis
+# @keywords: cost, braking, brake, training
+
+file=cost.xls
+
+setActiveSheet "Brakes"
+
+range: surfaceArea surfaceArea input description="surface area of pad in contact with rotor"  units="sq. in."
+range: thickness thickness input description="thickness of pad"  units="in"
+
+range: padCost padCost output description="cost of pad"  units="dollars"
+
+

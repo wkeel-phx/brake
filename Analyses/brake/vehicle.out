@@ -1,0 +1,21 @@
+# Vehicle Analysis Results
+# Thu Aug 12 07:13:12 2021
+#
+#INPUT: #
+#INPUT: # Vehicle Analysis input file
+#INPUT: #
+#INPUT: 
+#INPUT: grossWeight: 3200.0
+#INPUT: speed: 60.0
+#INPUT: rollingDiam: 22.0
+#INPUT: tireMu: 0.9
+#INPUT: numBrakingWheels: 4.0
+#INPUT: brakeTorque: 506.143751
+#INPUT: 
+#INPUT: 
+
+# calculated parameters
+singleStopForce=552.156819
+totalStopForce=2208.627277
+stopTime=3.959628
+stopDistance=174.223616
